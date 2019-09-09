@@ -7,14 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33CC9ED022F996D6002452FA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CC9ECF22F996D6002452FA /* main.cpp */; };
+		3304BD5D22FBC80A006D5BA0 /* StateMachine.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD4A22FBC808006D5BA0 /* StateMachine.hpp */; };
+		3304BD5E22FBC80A006D5BA0 /* SplashState.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD4B22FBC808006D5BA0 /* SplashState.hpp */; };
+		3304BD5F22FBC80A006D5BA0 /* MainMenuState.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD4C22FBC808006D5BA0 /* MainMenuState.hpp */; };
+		3304BD6022FBC80A006D5BA0 /* Player.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD4E22FBC808006D5BA0 /* Player.hpp */; };
+		3304BD6222FBC80A006D5BA0 /* State.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5122FBC808006D5BA0 /* State.hpp */; };
+		3304BD6322FBC80A006D5BA0 /* AssetManager.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5522FBC809006D5BA0 /* AssetManager.hpp */; };
+		3304BD6422FBC80A006D5BA0 /* Game.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5622FBC809006D5BA0 /* Game.hpp */; };
+		3304BD6522FBC80A006D5BA0 /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5722FBC809006D5BA0 /* State.cpp */; };
+		3304BD6622FBC80A006D5BA0 /* InputManager.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5822FBC809006D5BA0 /* InputManager.hpp */; };
+		3304BD6722FBC80A006D5BA0 /* DEFINITIONS.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5A22FBC809006D5BA0 /* DEFINITIONS.hpp */; };
+		3304BD6822FBC80A006D5BA0 /* GameStates.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5B22FBC80A006D5BA0 /* GameStates.hpp */; };
+		3304BD6922FBC831006D5BA0 /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5222FBC809006D5BA0 /* AssetManager.cpp */; };
+		3304BD6A22FBC831006D5BA0 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5322FBC809006D5BA0 /* Game.cpp */; };
+		3304BD6B22FBC831006D5BA0 /* GameStates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5C22FBC80A006D5BA0 /* GameStates.cpp */; };
+		3304BD6C22FBC831006D5BA0 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD4822FBC807006D5BA0 /* InputManager.cpp */; };
+		3304BD6D22FBC831006D5BA0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5422FBC809006D5BA0 /* main.cpp */; };
+		3304BD6E22FBC831006D5BA0 /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD4D22FBC808006D5BA0 /* MainMenuState.cpp */; };
+		3304BD6F22FBC831006D5BA0 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD5922FBC809006D5BA0 /* Player.cpp */; };
+		3304BD7022FBC831006D5BA0 /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD4F22FBC808006D5BA0 /* SplashState.cpp */; };
+		3304BD7122FBC831006D5BA0 /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD4922FBC807006D5BA0 /* StateMachine.cpp */; };
+		3304BD7622FBC967006D5BA0 /* splashscreen1.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7522FBC962006D5BA0 /* splashscreen1.png */; };
+		3304BD8622FBCA78006D5BA0 /* splashscreen2.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7722FBC9A0006D5BA0 /* splashscreen2.png */; };
+		3304BD8722FBCA78006D5BA0 /* gameOver.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7822FBC9AF006D5BA0 /* gameOver.png */; };
+		3304BD8822FBCA78006D5BA0 /* Title1.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7922FBC9BB006D5BA0 /* Title1.png */; };
+		3304BD8922FBCA78006D5BA0 /* Title2.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7A22FBC9C6006D5BA0 /* Title2.png */; };
+		3304BD8A22FBCA78006D5BA0 /* Title3.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7B22FBC9D0006D5BA0 /* Title3.png */; };
+		3304BD8B22FBCA78006D5BA0 /* desert.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7C22FBC9DF006D5BA0 /* desert.png */; };
+		3304BD8C22FBCA78006D5BA0 /* boardbackground.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7D22FBC9E8006D5BA0 /* boardbackground.png */; };
+		3304BD8D22FBCA78006D5BA0 /* tiles.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7E22FBC9F1006D5BA0 /* tiles.png */; };
+		3304BD8E22FBCA78006D5BA0 /* donald2.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD7F22FBCA16006D5BA0 /* donald2.png */; };
+		3304BD8F22FBCA78006D5BA0 /* wall2.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD8022FBCA2E006D5BA0 /* wall2.png */; };
+		3304BD9022FBCA78006D5BA0 /* easy.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD8122FBCA3A006D5BA0 /* easy.png */; };
+		3304BD9122FBCA78006D5BA0 /* hard.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD8222FBCA47006D5BA0 /* hard.png */; };
+		3304BD9222FBCA78006D5BA0 /* suicide.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD8322FBCA55006D5BA0 /* suicide.png */; };
+		3304BD9322FBCA78006D5BA0 /* explosion.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD8522FBCA6A006D5BA0 /* explosion.png */; };
+		3304BD9422FBCA78006D5BA0 /* walking.png in Sources */ = {isa = PBXBuildFile; fileRef = 3304BD8422FBCA60006D5BA0 /* walking.png */; };
+		33CC9EDE22F997BB002452FA /* vorbisenc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9ED722F997BB002452FA /* vorbisenc.framework */; };
+		33CC9EDF22F997BB002452FA /* freetype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9ED822F997BB002452FA /* freetype.framework */; };
+		33CC9EE022F997BB002452FA /* ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9ED922F997BB002452FA /* ogg.framework */; };
+		33CC9EE122F997BB002452FA /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EDA22F997BB002452FA /* FLAC.framework */; };
+		33CC9EE222F997BB002452FA /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EDB22F997BB002452FA /* OpenAL.framework */; };
+		33CC9EE322F997BC002452FA /* vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EDC22F997BB002452FA /* vorbis.framework */; };
+		33CC9EE422F997BC002452FA /* vorbisfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EDD22F997BB002452FA /* vorbisfile.framework */; };
+		33CC9EEB22F997D3002452FA /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EE522F997D2002452FA /* sfml-window.framework */; };
+		33CC9EEC22F997D3002452FA /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EE622F997D2002452FA /* sfml-graphics.framework */; };
+		33CC9EED22F997D3002452FA /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EE722F997D2002452FA /* sfml-audio.framework */; };
+		33CC9EEE22F997D3002452FA /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EE822F997D2002452FA /* SFML.framework */; };
+		33CC9EEF22F997D3002452FA /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EE922F997D2002452FA /* sfml-system.framework */; };
+		33CC9EF022F997D3002452FA /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9EEA22F997D2002452FA /* sfml-network.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		33CC9ECA22F996D6002452FA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -23,8 +71,56 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3304BD4822FBC807006D5BA0 /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = InputManager.cpp; path = Mesy/InputManager.cpp; sourceTree = "<group>"; };
+		3304BD4922FBC807006D5BA0 /* StateMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = StateMachine.cpp; path = Mesy/StateMachine.cpp; sourceTree = "<group>"; };
+		3304BD4A22FBC808006D5BA0 /* StateMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = StateMachine.hpp; path = Mesy/StateMachine.hpp; sourceTree = "<group>"; };
+		3304BD4B22FBC808006D5BA0 /* SplashState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SplashState.hpp; path = Mesy/SplashState.hpp; sourceTree = "<group>"; };
+		3304BD4C22FBC808006D5BA0 /* MainMenuState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MainMenuState.hpp; path = Mesy/MainMenuState.hpp; sourceTree = "<group>"; };
+		3304BD4D22FBC808006D5BA0 /* MainMenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenuState.cpp; path = Mesy/MainMenuState.cpp; sourceTree = "<group>"; };
+		3304BD4E22FBC808006D5BA0 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Player.hpp; path = Mesy/Player.hpp; sourceTree = "<group>"; };
+		3304BD4F22FBC808006D5BA0 /* SplashState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SplashState.cpp; path = Mesy/SplashState.cpp; sourceTree = "<group>"; };
+		3304BD5122FBC808006D5BA0 /* State.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = State.hpp; path = Mesy/State.hpp; sourceTree = "<group>"; };
+		3304BD5222FBC809006D5BA0 /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AssetManager.cpp; path = Mesy/AssetManager.cpp; sourceTree = "<group>"; };
+		3304BD5322FBC809006D5BA0 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = Mesy/Game.cpp; sourceTree = "<group>"; };
+		3304BD5422FBC809006D5BA0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Mesy/main.cpp; sourceTree = "<group>"; };
+		3304BD5522FBC809006D5BA0 /* AssetManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AssetManager.hpp; path = Mesy/AssetManager.hpp; sourceTree = "<group>"; };
+		3304BD5622FBC809006D5BA0 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Game.hpp; path = Mesy/Game.hpp; sourceTree = "<group>"; };
+		3304BD5722FBC809006D5BA0 /* State.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = State.cpp; path = Mesy/State.cpp; sourceTree = "<group>"; };
+		3304BD5822FBC809006D5BA0 /* InputManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = InputManager.hpp; path = Mesy/InputManager.hpp; sourceTree = "<group>"; };
+		3304BD5922FBC809006D5BA0 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = Mesy/Player.cpp; sourceTree = "<group>"; };
+		3304BD5A22FBC809006D5BA0 /* DEFINITIONS.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DEFINITIONS.hpp; path = Mesy/DEFINITIONS.hpp; sourceTree = "<group>"; };
+		3304BD5B22FBC80A006D5BA0 /* GameStates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = GameStates.hpp; path = Mesy/GameStates.hpp; sourceTree = "<group>"; };
+		3304BD5C22FBC80A006D5BA0 /* GameStates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GameStates.cpp; path = Mesy/GameStates.cpp; sourceTree = "<group>"; };
+		3304BD7522FBC962006D5BA0 /* splashscreen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen1.png; sourceTree = "<group>"; };
+		3304BD7722FBC9A0006D5BA0 /* splashscreen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen2.png; sourceTree = "<group>"; };
+		3304BD7822FBC9AF006D5BA0 /* gameOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameOver.png; sourceTree = "<group>"; };
+		3304BD7922FBC9BB006D5BA0 /* Title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title1.png; sourceTree = "<group>"; };
+		3304BD7A22FBC9C6006D5BA0 /* Title2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title2.png; sourceTree = "<group>"; };
+		3304BD7B22FBC9D0006D5BA0 /* Title3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title3.png; sourceTree = "<group>"; };
+		3304BD7C22FBC9DF006D5BA0 /* desert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desert.png; sourceTree = "<group>"; };
+		3304BD7D22FBC9E8006D5BA0 /* boardbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boardbackground.png; sourceTree = "<group>"; };
+		3304BD7E22FBC9F1006D5BA0 /* tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiles.png; sourceTree = "<group>"; };
+		3304BD7F22FBCA16006D5BA0 /* donald2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donald2.png; sourceTree = "<group>"; };
+		3304BD8022FBCA2E006D5BA0 /* wall2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall2.png; sourceTree = "<group>"; };
+		3304BD8122FBCA3A006D5BA0 /* easy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easy.png; sourceTree = "<group>"; };
+		3304BD8222FBCA47006D5BA0 /* hard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hard.png; sourceTree = "<group>"; };
+		3304BD8322FBCA55006D5BA0 /* suicide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suicide.png; sourceTree = "<group>"; };
+		3304BD8422FBCA60006D5BA0 /* walking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walking.png; sourceTree = "<group>"; };
+		3304BD8522FBCA6A006D5BA0 /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
 		33CC9ECC22F996D6002452FA /* Mesy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mesy; sourceTree = BUILT_PRODUCTS_DIR; };
-		33CC9ECF22F996D6002452FA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		33CC9ED722F997BB002452FA /* vorbisenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbisenc.framework; path = Mesy/ExternalLibraries/SFML/extlibs/vorbisenc.framework; sourceTree = "<group>"; };
+		33CC9ED822F997BB002452FA /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = freetype.framework; path = Mesy/ExternalLibraries/SFML/extlibs/freetype.framework; sourceTree = "<group>"; };
+		33CC9ED922F997BB002452FA /* ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ogg.framework; path = Mesy/ExternalLibraries/SFML/extlibs/ogg.framework; sourceTree = "<group>"; };
+		33CC9EDA22F997BB002452FA /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAC.framework; path = Mesy/ExternalLibraries/SFML/extlibs/FLAC.framework; sourceTree = "<group>"; };
+		33CC9EDB22F997BB002452FA /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Mesy/ExternalLibraries/SFML/extlibs/OpenAL.framework; sourceTree = "<group>"; };
+		33CC9EDC22F997BB002452FA /* vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbis.framework; path = Mesy/ExternalLibraries/SFML/extlibs/vorbis.framework; sourceTree = "<group>"; };
+		33CC9EDD22F997BB002452FA /* vorbisfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbisfile.framework; path = Mesy/ExternalLibraries/SFML/extlibs/vorbisfile.framework; sourceTree = "<group>"; };
+		33CC9EE522F997D2002452FA /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "Mesy/ExternalLibraries/SFML/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		33CC9EE622F997D2002452FA /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "Mesy/ExternalLibraries/SFML/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		33CC9EE722F997D2002452FA /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "Mesy/ExternalLibraries/SFML/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+		33CC9EE822F997D2002452FA /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = Mesy/ExternalLibraries/SFML/Frameworks/SFML.framework; sourceTree = "<group>"; };
+		33CC9EE922F997D2002452FA /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "Mesy/ExternalLibraries/SFML/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		33CC9EEA22F997D2002452FA /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "Mesy/ExternalLibraries/SFML/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +128,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CC9EEB22F997D3002452FA /* sfml-window.framework in Frameworks */,
+				33CC9EEC22F997D3002452FA /* sfml-graphics.framework in Frameworks */,
+				33CC9EED22F997D3002452FA /* sfml-audio.framework in Frameworks */,
+				33CC9EEE22F997D3002452FA /* SFML.framework in Frameworks */,
+				33CC9EEF22F997D3002452FA /* sfml-system.framework in Frameworks */,
+				33CC9EF022F997D3002452FA /* sfml-network.framework in Frameworks */,
+				33CC9EDE22F997BB002452FA /* vorbisenc.framework in Frameworks */,
+				33CC9EDF22F997BB002452FA /* freetype.framework in Frameworks */,
+				33CC9EE022F997BB002452FA /* ogg.framework in Frameworks */,
+				33CC9EE122F997BB002452FA /* FLAC.framework in Frameworks */,
+				33CC9EE222F997BB002452FA /* OpenAL.framework in Frameworks */,
+				33CC9EE322F997BC002452FA /* vorbis.framework in Frameworks */,
+				33CC9EE422F997BC002452FA /* vorbisfile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +150,44 @@
 		33CC9EC322F996D6002452FA = {
 			isa = PBXGroup;
 			children = (
-				33CC9ECE22F996D6002452FA /* Mesy */,
+				3304BD7522FBC962006D5BA0 /* splashscreen1.png */,
+				3304BD7722FBC9A0006D5BA0 /* splashscreen2.png */,
+				3304BD7822FBC9AF006D5BA0 /* gameOver.png */,
+				3304BD7922FBC9BB006D5BA0 /* Title1.png */,
+				3304BD7A22FBC9C6006D5BA0 /* Title2.png */,
+				3304BD7B22FBC9D0006D5BA0 /* Title3.png */,
+				3304BD7C22FBC9DF006D5BA0 /* desert.png */,
+				3304BD7D22FBC9E8006D5BA0 /* boardbackground.png */,
+				3304BD7E22FBC9F1006D5BA0 /* tiles.png */,
+				3304BD7F22FBCA16006D5BA0 /* donald2.png */,
+				3304BD8022FBCA2E006D5BA0 /* wall2.png */,
+				3304BD8122FBCA3A006D5BA0 /* easy.png */,
+				3304BD8222FBCA47006D5BA0 /* hard.png */,
+				3304BD8322FBCA55006D5BA0 /* suicide.png */,
+				3304BD8522FBCA6A006D5BA0 /* explosion.png */,
+				3304BD8422FBCA60006D5BA0 /* walking.png */,
+				3304BD5222FBC809006D5BA0 /* AssetManager.cpp */,
+				3304BD5522FBC809006D5BA0 /* AssetManager.hpp */,
+				3304BD5A22FBC809006D5BA0 /* DEFINITIONS.hpp */,
+				3304BD5322FBC809006D5BA0 /* Game.cpp */,
+				3304BD5622FBC809006D5BA0 /* Game.hpp */,
+				3304BD5C22FBC80A006D5BA0 /* GameStates.cpp */,
+				3304BD5B22FBC80A006D5BA0 /* GameStates.hpp */,
+				3304BD4822FBC807006D5BA0 /* InputManager.cpp */,
+				3304BD5822FBC809006D5BA0 /* InputManager.hpp */,
+				3304BD5422FBC809006D5BA0 /* main.cpp */,
+				3304BD4D22FBC808006D5BA0 /* MainMenuState.cpp */,
+				3304BD4C22FBC808006D5BA0 /* MainMenuState.hpp */,
+				3304BD5922FBC809006D5BA0 /* Player.cpp */,
+				3304BD4E22FBC808006D5BA0 /* Player.hpp */,
+				3304BD4F22FBC808006D5BA0 /* SplashState.cpp */,
+				3304BD4B22FBC808006D5BA0 /* SplashState.hpp */,
+				3304BD5722FBC809006D5BA0 /* State.cpp */,
+				3304BD5122FBC808006D5BA0 /* State.hpp */,
+				3304BD4922FBC807006D5BA0 /* StateMachine.cpp */,
+				3304BD4A22FBC808006D5BA0 /* StateMachine.hpp */,
 				33CC9ECD22F996D6002452FA /* Products */,
+				33CC9ED622F997BB002452FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +199,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		33CC9ECE22F996D6002452FA /* Mesy */ = {
+		33CC9ED622F997BB002452FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				33CC9ECF22F996D6002452FA /* main.cpp */,
+				33CC9EE722F997D2002452FA /* sfml-audio.framework */,
+				33CC9EE622F997D2002452FA /* sfml-graphics.framework */,
+				33CC9EEA22F997D2002452FA /* sfml-network.framework */,
+				33CC9EE922F997D2002452FA /* sfml-system.framework */,
+				33CC9EE522F997D2002452FA /* sfml-window.framework */,
+				33CC9EE822F997D2002452FA /* SFML.framework */,
+				33CC9EDA22F997BB002452FA /* FLAC.framework */,
+				33CC9ED822F997BB002452FA /* freetype.framework */,
+				33CC9ED922F997BB002452FA /* ogg.framework */,
+				33CC9EDB22F997BB002452FA /* OpenAL.framework */,
+				33CC9EDC22F997BB002452FA /* vorbis.framework */,
+				33CC9ED722F997BB002452FA /* vorbisenc.framework */,
+				33CC9EDD22F997BB002452FA /* vorbisfile.framework */,
 			);
-			path = Mesy;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +275,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33CC9ED022F996D6002452FA /* main.cpp in Sources */,
+				3304BD8622FBCA78006D5BA0 /* splashscreen2.png in Sources */,
+				3304BD8722FBCA78006D5BA0 /* gameOver.png in Sources */,
+				3304BD8822FBCA78006D5BA0 /* Title1.png in Sources */,
+				3304BD8922FBCA78006D5BA0 /* Title2.png in Sources */,
+				3304BD8A22FBCA78006D5BA0 /* Title3.png in Sources */,
+				3304BD8B22FBCA78006D5BA0 /* desert.png in Sources */,
+				3304BD8C22FBCA78006D5BA0 /* boardbackground.png in Sources */,
+				3304BD8D22FBCA78006D5BA0 /* tiles.png in Sources */,
+				3304BD8E22FBCA78006D5BA0 /* donald2.png in Sources */,
+				3304BD8F22FBCA78006D5BA0 /* wall2.png in Sources */,
+				3304BD9022FBCA78006D5BA0 /* easy.png in Sources */,
+				3304BD9122FBCA78006D5BA0 /* hard.png in Sources */,
+				3304BD9222FBCA78006D5BA0 /* suicide.png in Sources */,
+				3304BD9322FBCA78006D5BA0 /* explosion.png in Sources */,
+				3304BD9422FBCA78006D5BA0 /* walking.png in Sources */,
+				3304BD7622FBC967006D5BA0 /* splashscreen1.png in Sources */,
+				3304BD6922FBC831006D5BA0 /* AssetManager.cpp in Sources */,
+				3304BD6A22FBC831006D5BA0 /* Game.cpp in Sources */,
+				3304BD6B22FBC831006D5BA0 /* GameStates.cpp in Sources */,
+				3304BD6C22FBC831006D5BA0 /* InputManager.cpp in Sources */,
+				3304BD6D22FBC831006D5BA0 /* main.cpp in Sources */,
+				3304BD6E22FBC831006D5BA0 /* MainMenuState.cpp in Sources */,
+				3304BD6F22FBC831006D5BA0 /* Player.cpp in Sources */,
+				3304BD7022FBC831006D5BA0 /* SplashState.cpp in Sources */,
+				3304BD7122FBC831006D5BA0 /* StateMachine.cpp in Sources */,
+				3304BD5D22FBC80A006D5BA0 /* StateMachine.hpp in Sources */,
+				3304BD5E22FBC80A006D5BA0 /* SplashState.hpp in Sources */,
+				3304BD5F22FBC80A006D5BA0 /* MainMenuState.hpp in Sources */,
+				3304BD6022FBC80A006D5BA0 /* Player.hpp in Sources */,
+				3304BD6222FBC80A006D5BA0 /* State.hpp in Sources */,
+				3304BD6322FBC80A006D5BA0 /* AssetManager.hpp in Sources */,
+				3304BD6422FBC80A006D5BA0 /* Game.hpp in Sources */,
+				3304BD6522FBC80A006D5BA0 /* State.cpp in Sources */,
+				3304BD6622FBC80A006D5BA0 /* InputManager.hpp in Sources */,
+				3304BD6722FBC80A006D5BA0 /* DEFINITIONS.hpp in Sources */,
+				3304BD6822FBC80A006D5BA0 /* GameStates.hpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +432,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mesy/ExternalLibraries/SFML/extlibs",
+					"$(PROJECT_DIR)/Mesy/ExternalLibraries/SFML/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Mesy/ExternalLibraries/SFML/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +446,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mesy/ExternalLibraries/SFML/extlibs",
+					"$(PROJECT_DIR)/Mesy/ExternalLibraries/SFML/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Mesy/ExternalLibraries/SFML/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
